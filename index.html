@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" id="homeBtn">Home</a></li>
+        <li><a href="#about" id="aboutBtn">About</a></li>
+        <li><a href="#formSection" id="formBtn">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <section id="home" class="section">
+      <h1>Welcome to My Interactive Page</h1>
+      <button id="toggleThemeBtn">Toggle Dark/Light Theme</button>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About This Page</h2>
+      <p>This is a demo page with JavaScript interactivity, including a custom form validation system.</p>
+      <button id="randomQuoteBtn">Show Random Quote</button>
+      <p id="quoteDisplay"></p>
+    </section>
+
+    <section id="formSection" class="section">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formError" class="error"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

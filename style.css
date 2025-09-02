@@ -1,0 +1,41 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  padding: 1em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+.section {
+  padding: 2em;
+}
+
+/* Error messages */
+.error {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.dark-mode nav {
+  background: #555;
+}
